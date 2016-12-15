@@ -1,0 +1,161 @@
+
+    <div class="container" ng-controller="AboutController">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">About Us</li>
+               </ul>
+            </div>
+            <div class="col-xs-12">
+               <h3>About Us</h3>
+               <hr>
+            </div>
+        </div>
+        
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-8">
+                <h2>Our History</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed velit feugiat, vestibulum ipsum vitae, maximus quam. Curabitur sed turpis quis magna condimentum aliquam. Curabitur viverra tristique ipsum scelerisque vestibulum. Donec imperdiet elit quis eros blandit auctor at eget lacus. Vestibulum tincidunt lobortis turpis, nec ornare ante pharetra sit amet.</p>
+                <p>Praesent dictum lectus ac rutrum accumsan <em>alg Vestibulum</em>Integer eu placerat velit, elementum bibendum velit. Ut vitae leo pretium, cursus quam non, auctor massa.</p>
+                <div class="well">
+                    <blockquote>
+                        <p>Nulla semper pretium lorem, eu commodo est dapibus sed.</p>
+                        <footer>semper eu,  
+                        <cite title="Source Title">Sed congue nisl tincidunt libero sodales commodo at vitae nunc 2014</cite></footer>
+                    </blockquote>                
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-4">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Facts At a Glance</h3>
+                    </div>
+                    <div class="panel-body">
+                        <dl class="dl-horizontal">
+                            <dt>Started</dt>
+                            <dd>Dec 2016</dd>
+                            <dt>Major Stake Holder</dt>
+                            <dd>Myself :)</dd>
+                            <dt>Last Year's Turnover</dt>
+                            <dd>$1,250</dd>
+                            <dt>Employees</dt>
+                            <dd>001</dd>
+                       </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-9">
+                <h2>Corporate Leadership</h2>
+               <ul class="media-list">
+					<li class="media" ng-repeat="leader in leadership">
+                        <div class="media-left">
+                          <a ui-sref="#">
+                            <img class="media-object" ng-src="{{leader.image}}" alt="{{leader.name}}">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                         <h4 class="media-heading"><strong>{{leader.name}}</strong> <small>{{leader.designation}}</small></h4>
+                         <p> {{leader.description}} </p>
+                        </div>
+                      </li>
+               </ul>
+                
+            </div>
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div>
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-9">
+                <h2>Facts &amp; Figures</h2>
+                <div class="table-responsive">
+                <table class="table table-striped">
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <th>
+                            2013
+                        </th>
+                        <th>
+                            2014
+                        </th>
+                        <th>
+                            2015
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Employees
+                        </th>
+                        <td>
+                            01
+                        </td>
+                        <td>
+                            01
+                        </td>
+                        <td>
+                            01
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <th>
+                           pellentesque
+                        </th>
+                        <td>
+                            15000
+                        </td>
+                        <td>
+                            45000
+                        </td>
+                        <td>
+                            100,000
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <th>
+                            Vivamus sed
+                        </th>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            20
+                        </td>
+                        <td>
+                            45
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        <th>
+                            Proin placerat
+                        </th>
+                        <td>
+                            $251,325
+                        </td>
+                        <td>
+                            $1,250,375
+                        </td>
+                        <td>
+                            ~$3,000,000
+                        </td>
+                    
+                    </tr>
+                </table>
+                </div>
+            </div>
+             <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+            </div>
+       </div> 
+    </div>
